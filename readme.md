@@ -36,6 +36,7 @@ OPENAI_API_KEY='your_secrit_api_key'
 
 3. Execute
 ```bash
+docker build -t ask-multiple-pdf .
 docker run --env-file ./.env --mount type=bind,source=.,target=/app -p 8501:8501 ask-multiple-pdf
 ```
 
